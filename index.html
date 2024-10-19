@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+
+        <div class="form-container">
+            <div class="button-block">
+                <h2>Train Image</h2>
+                <input type="text" id="name" placeholder="Enter Name" required>
+                <input type="text" id="id" placeholder="Enter ID" required>
+                <button id="train">Train Image</button>
+            </div>
+
+            <div class="button-block">
+                <h2>Take Attendance</h2>
+                <button id="takeAttendance">Take Attendance</button>
+            </div>
+        </div>
+
+        <div class="camera-container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+
+        <h2>Attendance List</h2>
+        <table id="attendanceList">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="downloadExcel">Download Excel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
